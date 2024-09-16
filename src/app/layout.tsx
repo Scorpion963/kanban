@@ -2,6 +2,10 @@ import "~/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
+import { Header } from "~/_components/Header";
+import { MainHeader } from "~/_components/MainHeader";
+import { SidebarButtonsConainer } from "~/_components/SidebarButtonsContainer";
+import { Logo } from "~/_components/Logo";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -14,7 +18,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body>{children}</body>
+      <body className="bg-slate-100">
+        <Header main_header={<MainHeader />} sidebar_buttons={<SidebarButtonsConainer />} logo={<Logo />} />
+        {children}
+        </body>
     </html>
   );
 }
