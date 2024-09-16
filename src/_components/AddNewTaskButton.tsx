@@ -4,12 +4,14 @@ import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+
 export function AddNewTaskButton({
   form_modal,
 }: {
   form_modal: React.ReactNode;
 }) {
   const [isOpen, setIsOpen] = useState(false);
+ 
 
   return (
     <div>

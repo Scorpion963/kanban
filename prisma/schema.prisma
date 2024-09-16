@@ -15,7 +15,6 @@ model Board {
     name      String
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
-    color     String
     Column    Column[]
 
     @@index([name])
