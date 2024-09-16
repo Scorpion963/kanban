@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 export function AddNewTaskButton({
@@ -9,7 +9,7 @@ export function AddNewTaskButton({
 }: {
   form_modal: React.ReactNode;
 }) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
@@ -25,7 +25,7 @@ export function AddNewTaskButton({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="absolute left-1/2 top-1/2 h-screen w-full -translate-x-1/2 -translate-y-1/2 z-10"
+            className="absolute left-1/2 top-1/2 z-10 h-screen w-full -translate-x-1/2 -translate-y-1/2"
           >
             <div
               onClick={() => setIsOpen(false)}

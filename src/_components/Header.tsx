@@ -44,7 +44,9 @@ export function Header({
                 <p className="px-6 text-sm font-medium uppercase tracking-wider text-slate-500">
                   all boards (4)
                 </p>
-                <div className="pr-6 pt-6">{sidebar_buttons}</div>
+                <div className="pr-6 pt-6">
+                  {sidebar_buttons}
+                </div>
               </div>
 
               <div className="flex flex-col gap-3">
