@@ -19,9 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
       <body className="bg-slate-100">
-        <Header main_header={<MainHeader />} sidebar_buttons={<SidebarButtonsConainer />} logo={<Logo />} />
+        <Header
+          main_header={<MainHeader />}
+          sidebar_buttons={<SidebarButtonsConainer />}
+          logo={<Logo />}
+        />
         {children}
-        </body>
+      </body>
     </html>
   );
 }

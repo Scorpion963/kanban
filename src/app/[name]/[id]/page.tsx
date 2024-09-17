@@ -1,3 +1,7 @@
-export default async function ContentPage () {
-    return <></>
+export default async function ContentPage() {
+  return (
+    <div>
+    
+    </div>
+  );
 }
